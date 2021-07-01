@@ -1,0 +1,96 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 30 23:55:55 2021
+| Host         : DESKTOP-OLKKM7R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bitonic_sort_control_sets_placed.rpt
+| Design       : bitonic_sort
+| Device       : xc7z035
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |   100 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      8 |            2 |
+|      9 |            3 |
+|     10 |            2 |
+|     12 |            1 |
+|     14 |            1 |
+|     15 |            1 |
+|    16+ |           11 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1717 |          845 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             129 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------+-------------------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------+----------------------------+-------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | ascend[7]_i_1_n_0          | pt_ram_we_i_1_n_0             |                1 |              1 |
+|  clk_IBUF_BUFG | skips                      | rst_IBUF                      |                3 |              4 |
+|  clk_IBUF_BUFG | step12_out                 | fetch_i[3]_i_1_n_0            |                2 |              4 |
+|  clk_IBUF_BUFG | step_min_groups[7]_i_1_n_0 | rst_IBUF                      |                4 |              8 |
+|  clk_IBUF_BUFG | sub_group[7]_i_2_n_0       | sub_group[7]_i_1_n_0          |                3 |              8 |
+|  clk_IBUF_BUFG | prev_interval[9]_i_1_n_0   |                               |                2 |              9 |
+|  clk_IBUF_BUFG | skips                      | groups[8]_i_1_n_0             |                3 |              9 |
+|  clk_IBUF_BUFG | skips                      | sub_groups[8]_i_1_n_0         |                6 |              9 |
+|  clk_IBUF_BUFG | pt_ram_addra[9]_i_1_n_0    | rst_IBUF                      |                3 |             10 |
+|  clk_IBUF_BUFG | pt_ram_addrb[9]_i_2_n_0    | group_ram_start_addr          |                4 |             10 |
+|  clk_IBUF_BUFG | current_group_size         | current_group_size[0]_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG |                            |                               |                9 |             14 |
+|  clk_IBUF_BUFG | step_max_group_size        | rst_IBUF                      |                6 |             15 |
+|  clk_IBUF_BUFG | current_group_size         | group_ram_start_addr          |                7 |             18 |
+|  clk_IBUF_BUFG | skips                      | max_group_size[11]_i_1_n_0    |                7 |             21 |
+|  clk_IBUF_BUFG | result[0][49]_i_1_n_0      |                               |               66 |            100 |
+|  clk_IBUF_BUFG | result[11][49]_i_1_n_0     |                               |               63 |            100 |
+|  clk_IBUF_BUFG | result[15][49]_i_1_n_0     |                               |               64 |            100 |
+|  clk_IBUF_BUFG | result[12][49]_i_1_n_0     |                               |               64 |            100 |
+|  clk_IBUF_BUFG | result[3][49]_i_1_n_0      |                               |               72 |            100 |
+|  clk_IBUF_BUFG | result[4][49]_i_1_n_0      |                               |               55 |            100 |
+|  clk_IBUF_BUFG | result[7][49]_i_1_n_0      |                               |               61 |            100 |
+|  clk_IBUF_BUFG | result[8][49]_i_1_n_0      |                               |               63 |            100 |
+|  clk_IBUF_BUFG | ascend[7]_i_1_n_0          |                               |              335 |            908 |
++----------------+----------------------------+-------------------------------+------------------+----------------+
+
+

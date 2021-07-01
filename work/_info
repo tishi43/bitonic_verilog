@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/tishi/dsp48e1_sim
+vbitonic_sort
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1625036594
+!i10b 1
+!s100 fF3fS4V[;edKDK;YURZ061
+In8ikIICbIoO<eKgHE2Wn60
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 bitonic_sort_sv_unit
+S1
+Z3 dD:/tishi/bitonic_verilog
+w1625035454
+8D:/tishi/bitonic_verilog/bitonic_sort.sv
+FD:/tishi/bitonic_verilog/bitonic_sort.sv
+L0 12
+Z4 OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1625036593.000000
+!s107 bitonic_defines.v|D:/tishi/bitonic_verilog/bitonic_sort.sv|
+!s90 -reportprogress|300|-work|work|-novopt|-sv|-stats=none|D:/tishi/bitonic_verilog/bitonic_sort.sv|
+!i113 1
+Z5 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vpyr_tb
+R1
+!i10b 1
+!s100 GXHnN;gYAnA`^RooXJI?S2
+I?KbGcD=2:SZ9jKGMjT[3Q1
+R2
+R3
+w1624941821
+8D:/tishi/bitonic_verilog/pyr_tb.v
+FD:/tishi/bitonic_verilog/pyr_tb.v
+L0 14
+R4
+r1
+!s85 0
+31
+Z7 !s108 1625036594.000000
+!s107 bitonic_defines.v|D:/tishi/bitonic_verilog/pyr_tb.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|D:/tishi/bitonic_verilog/pyr_tb.v|
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vram_simple_dual
+R0
+!s110 1625036595
+!i10b 1
+!s100 P7H`WnCRS<aUBFSLFIc>Z0
+IP<ff<CaH1=TANC[fgK7?l2
+R2
+!s105 ram_simple_dual_sv_unit
+S1
+R3
+w1625036515
+8D:/tishi/bitonic_verilog/ram_simple_dual.sv
+FD:/tishi/bitonic_verilog/ram_simple_dual.sv
+L0 15
+R4
+r1
+!s85 0
+31
+R7
+!s107 D:/tishi/bitonic_verilog/ram_simple_dual.sv|
+!s90 -reportprogress|300|-work|work|-novopt|-sv|-stats=none|D:/tishi/bitonic_verilog/ram_simple_dual.sv|
+!i113 1
+R5
+R6
